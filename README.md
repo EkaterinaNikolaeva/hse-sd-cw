@@ -34,17 +34,17 @@ docker compose up --build
 
 Тогда адрес кафка-сервера = 127.0.0.1:29092
 
-## Запуск (TODO)
+## Запуск
 
 ### CLI клиент:
 
 ```bash
-python3 -m src.cli_main --server <kafka-server-address> --username <username> --channel <channel-name>
+python lib/cli_client.py
 ```
 
 ### GUI клиент:
 
 ```bash
-python -m bin.gui_main --server <kafka-server-address> --username <username> --channel <channel-name>
+python lib/gui_client.py
 ```
 
