@@ -60,7 +60,7 @@ class Chat:
 
 def main():
     parser = argparse.ArgumentParser(description="Kafka CLI Chat Client")
-    parser.add_argument('--username', required=True, help='Username for chat')
+    parser.add_argument('--username', default="anon", help='Username for chat')
     parser.add_argument('--host', default='127.0.0.1', help='Kafka broker host')
     parser.add_argument('--port', type=int, default=29092, help='Kafka broker port')
     parser.add_argument('--channel', default='general', help='Initial channel name')
