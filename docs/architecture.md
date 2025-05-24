@@ -37,3 +37,14 @@ def switch_channel(self, new_channel: str)
 #### TerminalClient
 
 Принимает команды из терминала (ввод сообщение, команду смена канала) и вызывает методы  `KafkaChatClient`
+
+
+### Структура проекта
+
+`bin/` - точки входа клиентов
+    * `bin/gui_main.py` - точка входа клиента для UI
+    * `bin/terminal_main.py` - точка входа клиента для терминала
+
+`lib/` - внутренние файлы проекта, содержит имплементации KafkaChatClient, GuiClient, TerminalClient
+
+`tests/` - файлы с тестами
