@@ -39,7 +39,7 @@ docker compose up --build
 ### CLI клиент:
 
 ```bash
-python lib/cli_client.py [--host HOST] [--port PORT] [--channel CHANNEL]
+python lib/cli_client.py [--host HOST] [--port PORT] [--channel CHANNEL] [--username USERNAME]
 ```
 
 ### GUI клиент:
