@@ -28,7 +28,6 @@ class GUIChat:
         root.protocol("WM_DELETE_WINDOW", self.on_close)
 
     def display_msg(self, message_data):
-        print("ffdf")
         if message_data.get('username') == self.username:
             return
         formatted = f"{message_data.get('username')}: {message_data.get('message')}"
