@@ -39,12 +39,16 @@ docker compose up --build
 ### CLI клиент:
 
 ```bash
-python lib/cli_client.py
+python lib/cli_client.py [--host HOST] [--port PORT] [--channel CHANNEL]
 ```
 
 ### GUI клиент:
 
 ```bash
-python lib/gui_client.py
+python lib/gui_client.py [--host HOST] [--port PORT] [--channel CHANNEL]
 ```
 
+### Defaults:
+- `--host 127.0.0.1`
+- `--port 29092`
+- `--channel general`
