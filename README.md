@@ -52,3 +52,11 @@ python lib/gui_client.py [--host HOST] [--port PORT] [--channel CHANNEL]
 - `--host 127.0.0.1`
 - `--port 29092`
 - `--channel general`
+
+## Запуск тестов
+
+Из директории проекта выполните:
+
+```bash
+python -m unittest discover tests/
+```
