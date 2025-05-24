@@ -35,6 +35,8 @@ class KafkaChatClient:
 
         self._create_topic_if_not_exists(initial_channel)
         self.switch_channel(initial_channel)
+        self.consumer.subscribe([self.current_channel])
+        self._start_consuming()
 
     def _init_admin_client(self):
         self.admin_client = AdminClient({'bootstrap.servers': self.bootstrap_servers})
